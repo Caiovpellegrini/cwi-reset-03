@@ -1,11 +1,13 @@
 public class Aplicacao {
     public static void main(String[] args) {
-        Filme filmeUm = new Filme("Forrest Gump", "90", "1996", 5);
-        filmeUm.Diretor("Joao Paulo", 85, 17);
-        System.out.println("Reproduzir o filme" + filmeUm);
+        Diretor diretor = new Diretor("Christopher Nolan", 51 , 58);
+        Filme interestelar = new Filme ("Interestelar", "Filme muito bom", 120,
+                2014, 5.0, diretor);
+        Filme batman = new Filme ("Batman", "Filme muito bom", 120,
+                2014, 4.8, diretor);
 
-        Filme filmeDois = new Filme ("Ghost", "86", "1993", 3);
-        filmeDois.Diretor("Noel Gallagher", 49, 34);
-        System.out.println("Reproduzir o filme" );
+        interestelar.reproduzir();
+        batman.reproduzir();
+
     }
 }
