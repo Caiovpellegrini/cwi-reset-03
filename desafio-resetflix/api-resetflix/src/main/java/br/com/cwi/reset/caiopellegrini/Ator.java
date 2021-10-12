@@ -17,5 +17,5 @@ public class Ator {
         this.statusCarreira = statusCarreira;
         this.anoInicioAtividade = anoInicioAtividade;
     }
-    
+
 }
