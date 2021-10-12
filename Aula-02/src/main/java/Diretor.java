@@ -20,15 +20,15 @@ public class Diretor extends Pessoa {
 
     //public String getNome() {
      //   return nome;
-    }
+   // }
 
     //public Integer getIdade() {
        // return idade;
-    }
+    //}
 
-    public Integer getQuantidadeFilmes() {
-        return quantidadeFilmes;
-    }
+   // public Integer getQuantidadeFilmes() {
+    //    return quantidadeFilmes;
+   // }
 
    /* public void imprimirInformacoes (){
         System.out.println("Nome: " + nome);
@@ -36,7 +36,7 @@ public class Diretor extends Pessoa {
         System.out.println("Quantidade de filmes: " + quantidadeFilmes);
         System.out.println("Gênero " + genero.getDescricao());
 */
-    }
+    //}
 
 
-}
+//}

@@ -1,4 +1,4 @@
-public class Pessoa {
+public abstract class Pessoa {
     private String nome;
     private Integer idade;
     private Genero genero;
@@ -12,6 +12,10 @@ public class Pessoa {
     public void imprimirAtributosPessoa (){
         System.out.println("nome: " + nome);
         System.out.println("idade" + idade);
-        System.out.println("Genero: " + + genero.getDescricao());
+        System.out.println("Genero: " +  genero.getDescricao());
+    }
+
+    public String  getNome() {
+        return nome;
     }
 }
