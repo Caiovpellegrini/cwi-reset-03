@@ -1,9 +1,12 @@
+import java.time.LocalDate;
+
 public class Aplicacao {
+
     public static void main(String[] args) {
-        Diretor diretor = new Diretor("Christopher Nolan", 51 , Genero.MASCULINO, 50 );
+        Diretor diretor = new Diretor("Christopher Nolan", LocalDate.of(1991, 5, 5), Genero.MASCULINO, 50 );
         diretor.imprimirAtributosPessoa();
 
-        Ator ator = new Ator ("Teste", 80, Genero.FEMININO, 10);
+        Ator ator = new Ator ("Teste", LocalDate.of(1991, 11, 18), Genero.FEMININO, 10);
         ator.imprimirAtributosPessoa();
 
 

@@ -1,9 +1,13 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Ator extends Pessoa {
 
     private Integer numeroOscars;
 
-    public Ator (String nome, Integer idade, Genero genero, Integer numeroOscars ){
-        super (nome, idade, genero);
+    public Ator (String nome, LocalDate dataNascimento, Genero genero, Integer numeroOscars ){
+        super (nome, dataNascimento, genero);
         this.numeroOscars = numeroOscars;
     }
 

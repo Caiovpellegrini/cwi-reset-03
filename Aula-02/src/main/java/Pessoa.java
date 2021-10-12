@@ -1,21 +1,33 @@
+
+
+import java.time.LocalDate;
+import java.time.Period;
+
 public abstract class Pessoa {
+
     private String nome;
-    private Integer idade;
+    private LocalDate dataNascimento;
     private Genero genero;
 
-    public Pessoa(String nome, Integer idade, Genero genero) {
+    public Pessoa(String nome, LocalDate dataNascimento, Genero genero) {
         this.nome = nome;
-        this.idade = idade;
+        this.dataNascimento = dataNascimento;
         this.genero = genero;
     }
 
-    public void imprimirAtributosPessoa (){
+
+    public void imprimirAtributosPessoa () {
         System.out.println("nome: " + nome);
-        System.out.println("idade" + idade);
+        System.out.println("Idade: " + this.calcularIdade());
         System.out.println("Genero: " +  genero.getDescricao());
     }
 
     public String  getNome() {
         return nome;
     }
-}
+
+
+    private Integer calcularIdade() {
+    return Period.between(dataNascimento, LocalDate.now()).getYears();
+        }
+        }

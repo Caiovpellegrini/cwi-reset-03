@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Filme {
 
     private String nome;
@@ -27,6 +30,17 @@ public class Filme {
         System.out.println("Diretor: " + diretor.getNome());
     }
 
+    public static void main(String[] args) {
+        List<String> filmes = new ArrayList<>();
+        filmes.add("Debi & Lóide");
+        filmes.add("Ace Ventura");
+        filmes.add("O Maskara");
+        filmes.add("O Mentiroso");
+        for (String mostrar : filmes){
+            System.out.println(mostrar);
+        }
+
+    }
 
 }
 
