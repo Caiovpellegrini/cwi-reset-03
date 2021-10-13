@@ -10,23 +10,24 @@ public class Filme {
     private LocalDate anoLancamento;
     private String capaFilme;
     private Diretor diretor;
-    // - List:PersonagemAtor personagens
+    private Genero generos;
+    private PersonagemAtor personagens;
     private String resumo;
 
-    public static void main(String[] args) {
-        List<String> generos = new ArrayList<>();
-        generos.add("AÇÃO");
-        generos.add("AVENTURA");
-        generos.add("COMÉDIA");
-        generos.add("DOCUMENTARIO");
-        generos.add("DRAMA");
-        generos.add("ESPIONAGEM");
-        generos.add("FICCAO_CIENTIFICA");
-        generos.add("GUERRA");
-        generos.add("MISTERIO");
-        generos.add("MUSICAL");
-        generos.add("POLICIAL");
-        generos.add("ROMANCE");
-        generos.add("TERROR");
+    public Filme(Integer id, String nome, LocalDate anoLancamento, String capaFilme, Diretor diretor, Genero generos, PersonagemAtor personagens, String resumo) {
+        this.id = id;
+        this.nome = nome;
+        this.anoLancamento = anoLancamento;
+        this.capaFilme = capaFilme;
+        this.diretor = diretor;
+        this.generos = generos;
+        this.personagens = personagens;
+        this.resumo = resumo;
+    }
+
+    public static List<Genero> generos (){
+    }
+    public static List <PersonagemAtor> personagens (){
+
     }
 }
