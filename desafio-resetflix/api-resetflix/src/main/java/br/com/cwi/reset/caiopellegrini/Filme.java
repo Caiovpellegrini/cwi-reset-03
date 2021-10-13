@@ -10,8 +10,8 @@ public class Filme {
     private LocalDate anoLancamento;
     private String capaFilme;
     private Diretor diretor;
-    private Genero generos;
-    private PersonagemAtor personagens;
+   // private Genero generos;
+   // private PersonagemAtor personagens;
     private String resumo;
 
     public Filme(Integer id, String nome, LocalDate anoLancamento, String capaFilme, Diretor diretor, Genero generos, PersonagemAtor personagens, String resumo) {
@@ -20,14 +20,19 @@ public class Filme {
         this.anoLancamento = anoLancamento;
         this.capaFilme = capaFilme;
         this.diretor = diretor;
-        this.generos = generos;
-        this.personagens = personagens;
+        // this.generos = generos;
+        // this.personagens = personagens;
         this.resumo = resumo;
     }
 
-    public static List<Genero> generos (){
+    public static List<Genero> getGeneros (){
+        List<Genero> generos = new ArrayList<>();
+        return generos;
     }
-    public static List <PersonagemAtor> personagens (){
+
+    public static List <PersonagemAtor> getPersonagens () {
+            List <PersonagemAtor> personagens = new ArrayList<>();
+            return personagens;
 
     }
 }

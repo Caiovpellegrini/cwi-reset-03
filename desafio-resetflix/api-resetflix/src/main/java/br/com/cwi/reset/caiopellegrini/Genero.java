@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Genero {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         List<String> generos = new ArrayList<>();
         generos.add("AÇÃO");
         generos.add("AVENTURA");
@@ -19,4 +19,5 @@ public class Genero {
         generos.add("POLICIAL");
         generos.add("ROMANCE");
         generos.add("TERROR");
+    }
 }

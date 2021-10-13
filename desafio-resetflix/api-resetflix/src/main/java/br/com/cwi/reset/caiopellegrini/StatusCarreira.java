@@ -4,9 +4,9 @@ public enum StatusCarreira {
     EM_ATIVIDADE ("Em atividade"),
     APOSENTADO ("Está Aposentado");
 
-    private String descricaoStatusCarreira;
+   private String descricaoStatusCarreira;
 
-    StatusCarreira(String descricaoStatusCarreira) {
+   StatusCarreira(String descricaoStatusCarreira) {
         this.descricaoStatusCarreira = descricaoStatusCarreira;
     }
 

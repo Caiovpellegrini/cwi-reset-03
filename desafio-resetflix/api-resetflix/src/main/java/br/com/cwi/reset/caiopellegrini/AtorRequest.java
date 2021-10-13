@@ -2,12 +2,20 @@ package br.com.cwi.reset.caiopellegrini;
 
 import java.time.LocalDate;
 
-public class AtorRequest extends Ator {
+public class AtorRequest {
+    private String nome;
+    private LocalDate dataNascimento;
+    private StatusCarreira statusCarreira;
+    private Integer anoInicioAtividade;
 
- public AtorRequest (String nome, LocalDate dataNascimento, StatusCarreira statusCarreira, Integer anoInicioAtividade) {
-     super (nome, dataNascimento, statusCarreira, anoInicioAtividade);
- }
+    public AtorRequest(String nome, LocalDate dataNascimento, StatusCarreira statusCarreira, Integer anoInicioAtividade) {
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.statusCarreira = statusCarreira;
+        this.anoInicioAtividade = anoInicioAtividade;
+    }
+
+
 public static void atorRequest(){
-     throws
 }
 }
