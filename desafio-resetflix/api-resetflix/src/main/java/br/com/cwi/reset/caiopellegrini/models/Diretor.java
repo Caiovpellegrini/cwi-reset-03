@@ -1,4 +1,4 @@
-package br.com.cwi.reset.caiopellegrini;
+package br.com.cwi.reset.caiopellegrini.models;
 
 import java.time.LocalDate;
 

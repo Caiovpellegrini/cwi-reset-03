@@ -1,5 +1,8 @@
 package br.com.cwi.reset.caiopellegrini;
 
+import br.com.cwi.reset.caiopellegrini.models.Ator;
+import br.com.cwi.reset.caiopellegrini.models.Diretor;
+
 import java.util.ArrayList;
 import java.util.List;
 

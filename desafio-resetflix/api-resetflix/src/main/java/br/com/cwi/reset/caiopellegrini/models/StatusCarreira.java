@@ -1,4 +1,4 @@
-package br.com.cwi.reset.caiopellegrini;
+package br.com.cwi.reset.caiopellegrini.models;
 
 public enum StatusCarreira {
     EM_ATIVIDADE ("Em atividade"),
