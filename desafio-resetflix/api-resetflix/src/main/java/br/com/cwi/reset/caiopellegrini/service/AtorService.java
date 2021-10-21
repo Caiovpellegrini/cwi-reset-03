@@ -74,7 +74,7 @@ public class AtorService {
     }
 
     public List<AtorEmAtividade> listarAtoresEmAtividade(String filtroNome) throws Exception { //criando lista AtorEmatividade e usando variavel String filtro nome
-        final List <Ator> atoresCadastrados = FakeDatabase.recuperaAtores();
+        final List <Ator> atoresCadastrados = fakeDatabase.recuperaAtores();
 
        if (atoresCadastrados.isEmpty()) {
            throw new ListaVaziaException(TipoDominioException.ATOR.getSingular(), TipoDominioException.ATOR.getPlural());
@@ -101,7 +101,7 @@ public class AtorService {
             }
         }
 if(retorno.isEmpty()) {
-    throw new FiltroNomeNaoEncontradoException("Ator", filtroNome);
+    throw new FiltroNomeNaoEncontrado("Ator", filtroNome);
 }
 return retorno;
     }
@@ -112,19 +112,21 @@ return retorno;
         final List <Ator> atores = fakeDatabase.recuperaAtores();
 
         for(Ator ator: atores) {
-if (ator.getId().equals(id)) {
-    return ator;
+            if (ator.getId().equals(id)) {
+                return ator;
             }
         }
+            throw new ConsultaIdInvalidoException(TipoDominioException.ATOR.getSingular(), id);
+    }
 
-public List<Ator> consultaAtores() throws Exception {
-final List <Ator> atores = fakeDatabase.recuperaAtores();
+    public List<Ator> consultarAtores() throws Exception {
+        final List<Ator> atores = fakeDatabase.recuperaAtores();
 
-if (atores.isEmpty()) {
-throw new ListaVaziaException(TipoDominioException.ATOR.getSingular(), TipoDominioException.ATOR.getPlural());
-}
-            }
+        if (atores.isEmpty()) {
+            throw new ListaVaziaException(TipoDominioException.ATOR.getSingular(), TipoDominioException.ATOR.getPlural());
+        }
 
+        return atores;
     }
 
    }

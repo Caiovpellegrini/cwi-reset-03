@@ -10,29 +10,57 @@ public class Filme {
     private LocalDate anoLancamento;
     private String capaFilme;
     private Diretor diretor;
-   // private Genero generos;
-   // private PersonagemAtor personagens;
+    private Genero generos;
+    private List<PersonagemAtor> personagens;
     private String resumo;
+    private Estudio estudio;
 
-    public Filme(Integer id, String nome, LocalDate anoLancamento, String capaFilme, Diretor diretor, Genero generos, PersonagemAtor personagens, String resumo) {
+    public Filme(Integer id, String nome, LocalDate anoLancamento, String capaFilme, Diretor diretor, Genero generos,
+                 List<PersonagemAtor> personagens, String resumo, Estudio estudio) {
         this.id = id;
         this.nome = nome;
         this.anoLancamento = anoLancamento;
         this.capaFilme = capaFilme;
         this.diretor = diretor;
-        // this.generos = generos;
-        // this.personagens = personagens;
+        this.generos = generos;
+        this.personagens = personagens;
         this.resumo = resumo;
+        this.estudio = estudio;
     }
 
-    public static List<Genero> getGeneros (){
-        List<Genero> generos = new ArrayList<>();
+    public Integer getId() {
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public LocalDate getAnoLancamento() {
+        return anoLancamento;
+    }
+
+    public String getCapaFilme() {
+        return capaFilme;
+    }
+
+    public Diretor getDiretor() {
+        return diretor;
+    }
+
+    public Genero getGeneros() {
         return generos;
     }
 
-    public static List <PersonagemAtor> getPersonagens () {
-            List <PersonagemAtor> personagens = new ArrayList<>();
-            return personagens;
+    public List<PersonagemAtor> getPersonagens() {
+        return personagens;
+    }
 
+    public String getResumo() {
+        return resumo;
+    }
+
+    public Estudio getEstudio() {
+        return estudio;
     }
 }
