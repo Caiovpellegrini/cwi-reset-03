@@ -1,8 +1,12 @@
 package br.com.cwi.reset.projeto1.exception;
 
-public class PetNaoExistenteException extends Exception {
-    public PetNaoExistenteException (String message) {
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
-        super(message);
+@ResponseStatus(HttpStatus.NOT_FOUND)
+public class PetNaoExistenteException extends Exception {
+
+    public PetNaoExistenteException(String mensagem) {
+        super(mensagem);
     }
 }
