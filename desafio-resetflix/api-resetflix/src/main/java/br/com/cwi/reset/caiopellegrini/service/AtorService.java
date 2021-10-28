@@ -66,11 +66,12 @@ public class AtorService {
 
        final Integer idGerado = atores.size() +1; // gerando IDs automáticos a partir do 1
 
-       final Ator ator = new Ator(idGerado, atorRequest.getNome(),
-               atorRequest.getDataNascimento(), atorRequest.getStatusCarreira(),
-                atorRequest.getAnoInicioAtividade()); //criando ator
-        fakeDatabase.persisteAtor(ator);
+        final Ator ator = new Ator(idGerado, atorRequest.getNome(),
+                atorRequest.getDataNascimento(),
+                atorRequest.getStatusCarreira(),
+                atorRequest.getAnoInicioAtividade());
 
+        fakeDatabase.persisteAtor(ator);
     }
 
     public List<AtorEmAtividade> listarAtoresEmAtividade(String filtroNome) throws Exception { //criando lista AtorEmatividade e usando variavel String filtro nome

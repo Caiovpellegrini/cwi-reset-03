@@ -1,5 +1,4 @@
 package br.com.cwi.reset.caiopellegrini.models;
-
 public enum Genero {
     ACAO,
     AVENTURA,

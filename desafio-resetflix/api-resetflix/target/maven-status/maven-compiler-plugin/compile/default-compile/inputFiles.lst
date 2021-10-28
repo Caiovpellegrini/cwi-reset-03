@@ -3,6 +3,7 @@ C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\r
 C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\exceptions\TipoDominioException.java
 C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\models\Filme.java
 C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\service\FilmeService.java
+C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\controllers\AtorController.java
 C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\models\Ator.java
 C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\exceptions\FiltroNomeNaoEncontrado.java
 C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\models\StatusAtividade.java
@@ -29,7 +30,7 @@ C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\r
 C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\request\PersonagemRequest.java
 C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\exceptions\ConsultaIdInvalidoException.java
 C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\controllers\DiretorController.java
-C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\exceptions\FiltroNomeNaoEncontradoException.java
+C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\controllers\EstudioController.java
 C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\models\StatusCarreira.java
 C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\request\EstudioRequest.java
 C:\Reset\cwi-reset-03\desafio-resetflix\api-resetflix\src\main\java\br\com\cwi\reset\caiopellegrini\service\EstudioService.java
